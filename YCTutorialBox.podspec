@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'YCTutorialBox'
   spec.version          = '1.0'
-  spec.license          = { :type => 'MIT' }
+  spec.license          = 'MIT'
   spec.homepage         = 'https://github.com/yuppiu/YCTutorialBox'
   spec.authors          = { 'Fabio Knoedt' => 'fabioknoedt@gmail.com' }
   spec.summary          = 'A UIView subclass for Tutorial/Welcome/New Feature/Explanation flow. You can focus one element in the screen and show instructions about it.'
