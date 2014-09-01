@@ -8,11 +8,11 @@ This UI library was designed to show a simple balloon/box with:
 - Help text
 - One element in focus (the rest of the screen will be blurred)
 
-When the user cliks in the box, you have 2 options:
+When the user closes (tapping) in the box, you have 2 options:
 - Dismiss the YCTutorialBox
 - Dimisss the YCTutorialBox and execute a snippet of code
 
-The second option is useful for tutorials. For example, you want to show a explanation for the user when she clicks in a button, but you still want to perform the action of that button. In this case, you call the YCTutorialBox and send a block of code to execute when the user dismisses the dialog.
+The second option is useful for tutorials or presenting new features. For example, you want to show an explanation text for the user when she taps in a button, but you still want to perform the action of that button. In this case, you call the YCTutorialBox sending a block of code to execute when the user dismisses (closes) the dialog.
 
 Usage
 ------------
@@ -34,7 +34,7 @@ c. Headline, help text, with focus in an (UIView *), no completion block.
                                                      	 withHelpText:@"HELPTEXT"];
 	[tutorial showAndFocusView:UIVIEW_OBJECT_TO_FOCUS];
 	
-d. Headline, help text, with focus in an (UIView *), with completion block.
+d. Headline, help text, no focus, with completion block.
 
 	YCTutorialBox *tutorial = [[YCTutorialBox alloc] initWithHeadline:@"HEADLINE"
                                                      	 withHelpText:@"HELPTEXT"
