@@ -1,5 +1,5 @@
 //
-//  FKSTutorialBox.h
+//  YCTutorialBox.h
 //  YU - YUPPIU
 //
 //  Created by Fabio Knoedt on 26/08/14.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <FXBlurView/FXBlurView.h>
 
-@interface FKSTutorialBox : FXBlurView
+@interface YCTutorialBox : FXBlurView
 
 /*!
  *  @brief  Initialize the view with a headline.

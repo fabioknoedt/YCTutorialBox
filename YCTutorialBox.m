@@ -1,17 +1,17 @@
 //
-//  FKSTutorialBox.m
+//  YCTutorialBox.m
 //  YU - YUPPIU
 //
 //  Created by Fabio Knoedt on 26/08/14.
 //  Copyright (c) 2014 Datedicted. All rights reserved.
 //
 
-#import "FKSTutorialBox.h"
+#import "YCTutorialBox.h"
 #import <FXLabel/FXLabel.h>
 
 #define distanceBetweenViewAndBox 40
 
-@interface FKSTutorialBox ()
+@interface YCTutorialBox ()
 
 @property (weak, nonatomic) IBOutlet UIView *box;
 @property (weak, nonatomic) IBOutlet FXLabel *boxHeadline;
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation FKSTutorialBox
+@implementation YCTutorialBox
 
 /*!
  *  @brief  Initialize the view with a headline.
@@ -55,7 +55,7 @@
 - (id)initWithHeadline:(NSString *)headline withHelpText:(NSString *)helpText withCompletionBlock:(void (^)())completion;
 {
     /// Init the view.
-    self = [[[NSBundle mainBundle] loadNibNamed:@"FKSTutorialBox" owner:self options:nil] lastObject];
+    self = [[[NSBundle mainBundle] loadNibNamed:@"YCTutorialBox" owner:self options:nil] lastObject];
     
     if (self) {
         
