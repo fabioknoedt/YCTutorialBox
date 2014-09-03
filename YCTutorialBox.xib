@@ -10,11 +10,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-ZO-aT2" userLabel="Box">
-                    <rect key="frame" x="10" y="245" width="300" height="78"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-ZO-aT2" userLabel="Box">
+                    <rect key="frame" x="10" y="254" width="300" height="60"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TAKE A PICTURE OF YOURSELF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-7i-8t2" userLabel="boxHeadline" customClass="FXLabel">
-                            <rect key="frame" x="0.0" y="14" width="300" height="36"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE A PICTURE OF YOURSELF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-7i-8t2" userLabel="boxHeadline" customClass="FXLabel">
+                            <rect key="frame" x="0.0" y="14" width="300" height="18"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ttB-2A-Egl"/>
                             </constraints>
@@ -27,8 +27,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DON'T WORRY YOU CAN EDIT IT WITH FILTER LATER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-bV-rat" userLabel="boxHelpText" customClass="FXLabel">
-                            <rect key="frame" x="0.0" y="50" width="300" height="12"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T WORRY YOU CAN EDIT IT WITH FILTER LATER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-bV-rat" userLabel="boxHelpText" customClass="FXLabel">
+                            <rect key="frame" x="0.0" y="32" width="300" height="12"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="fZB-EC-sHu"/>
                             </constraints>
