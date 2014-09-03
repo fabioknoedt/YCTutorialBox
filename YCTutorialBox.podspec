@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'YCTutorialBox'
-  spec.version          = '1.0'
+  spec.version          = '1.0.1'
   spec.license      	= { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage         = 'https://github.com/yuppiu/YCTutorialBox'
   spec.authors          = { 'Fabio Knoedt' => 'fabioknoedt@gmail.com' }
