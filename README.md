@@ -54,4 +54,4 @@ Runs fine in iOS6+ and requires ARC.
 Contributors
 ------------
 
-* Fabio Knoedt
+* [Fabio Knoedt](https://github.com/fabioknoedt)
