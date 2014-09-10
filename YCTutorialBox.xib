@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,8 +13,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-ZO-aT2" userLabel="Box">
                     <rect key="frame" x="10" y="254" width="300" height="60"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE A PICTURE OF YOURSELF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-7i-8t2" userLabel="boxHeadline" customClass="FXLabel">
-                            <rect key="frame" x="0.0" y="14" width="300" height="18"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE A PICTURE OF YOURSELF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-7i-8t2" userLabel="boxHeadline" customClass="FXLabel">
+                            <rect key="frame" x="20" y="14" width="260" height="18"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ttB-2A-Egl"/>
                             </constraints>
@@ -27,8 +27,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T WORRY YOU CAN EDIT IT WITH FILTER LATER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-bV-rat" userLabel="boxHelpText" customClass="FXLabel">
-                            <rect key="frame" x="0.0" y="32" width="300" height="12"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T WORRY YOU CAN EDIT IT WITH FILTER LATER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-bV-rat" userLabel="boxHelpText" customClass="FXLabel">
+                            <rect key="frame" x="20" y="32" width="260" height="12"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="fZB-EC-sHu"/>
                             </constraints>
@@ -46,12 +46,13 @@
                     <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="r3z-7i-8t2" firstAttribute="top" secondItem="Rwz-ZO-aT2" secondAttribute="top" constant="14" id="4Xn-gZ-wZL"/>
+                        <constraint firstItem="cT0-bV-rat" firstAttribute="leading" secondItem="Rwz-ZO-aT2" secondAttribute="leading" constant="20" id="5OT-uT-z51"/>
                         <constraint firstAttribute="bottom" secondItem="cT0-bV-rat" secondAttribute="bottom" constant="16" id="BKS-Ux-sqR"/>
-                        <constraint firstAttribute="trailing" secondItem="r3z-7i-8t2" secondAttribute="trailing" id="KrA-3E-4aM"/>
+                        <constraint firstAttribute="trailing" secondItem="r3z-7i-8t2" secondAttribute="trailing" constant="20" id="KrA-3E-4aM"/>
                         <constraint firstItem="cT0-bV-rat" firstAttribute="top" secondItem="r3z-7i-8t2" secondAttribute="bottom" id="ihI-Gn-4Fq"/>
                         <constraint firstItem="cT0-bV-rat" firstAttribute="leading" secondItem="r3z-7i-8t2" secondAttribute="leading" id="nw7-rX-0Rs"/>
-                        <constraint firstItem="r3z-7i-8t2" firstAttribute="leading" secondItem="Rwz-ZO-aT2" secondAttribute="leading" id="p5Z-1B-WwJ"/>
-                        <constraint firstAttribute="trailing" secondItem="cT0-bV-rat" secondAttribute="trailing" id="v63-d4-qa2"/>
+                        <constraint firstItem="r3z-7i-8t2" firstAttribute="leading" secondItem="Rwz-ZO-aT2" secondAttribute="leading" constant="20" id="p5Z-1B-WwJ"/>
+                        <constraint firstAttribute="trailing" secondItem="cT0-bV-rat" secondAttribute="trailing" constant="20" id="v63-d4-qa2"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -73,10 +74,7 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
-                <size key="portraitSize" width="320" height="568"/>
-                <size key="landscapeSize" width="568" height="320"/>
-            </simulatedScreenMetrics>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                     <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

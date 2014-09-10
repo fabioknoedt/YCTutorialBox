@@ -113,22 +113,37 @@
         CGFloat heightDown = currentWindow.frame.size.height - pointInWindow.y - view.frame.size.height;
         
         /// Check what is the better place to place the box.
-        if (heightUp > heightDown && heightUp > _box.frame.size.height + 2*distanceBetweenViewAndBox) {
+        
+        /// Prio 1: Place the box in front of the element, if it is big enough.
+        if (view.frame.size.height > _box.frame.size.height) {
+            
+            [_box setCenter:CGPointMake(_box.center.x, pointInWindow.y + view.frame.size.height/2)];
+            
+        }
+        
+        /// Prio 2: Place the box above the element.
+        else if (heightUp > heightDown && heightUp > _box.frame.size.height + 2*distanceBetweenViewAndBox) {
             
             [_box setFrame:CGRectMake(_box.frame.origin.x,
                                       MAX(0, pointInWindow.y - distanceBetweenViewAndBox - _box.frame.size.height),
                                       _box.frame.size.width,
                                       _box.frame.size.height)];
 
-        } else if (heightDown > heightUp && heightDown > _box.frame.size.height + 2*distanceBetweenViewAndBox) {
+        }
+        
+        /// Prio 3: Place the box below the element.
+        else if (heightDown > heightUp && heightDown > _box.frame.size.height + 2*distanceBetweenViewAndBox) {
            
             [_box setFrame:CGRectMake(_box.frame.origin.x,
                                       MIN(currentWindow.frame.size.height - _box.frame.size.height - 10, pointInWindow.y + view.frame.size.height + distanceBetweenViewAndBox),
                                       _box.frame.size.width,
                                       _box.frame.size.height)];
-        } else {
+        }
+        
+        /// Prio 4: Place the box in the center of the screen.
+        else {
             
-            [_box setCenter:CGPointMake(_box.center.x, pointInWindow.y + view.frame.size.height/2)];
+            [_box setCenter:CGPointMake(_box.center.x, self.center.y)];
         }
     }
 }
