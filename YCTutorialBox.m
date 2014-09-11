@@ -115,10 +115,9 @@
         /// Check what is the better place to place the box.
         
         /// Prio 1: Place the box in front of the element, if it is big enough.
-        if (view.frame.size.height > _box.frame.size.height) {
+        if (view.frame.size.height > 300.0f && view.frame.size.height > _box.frame.size.height) {
             
             [_box setCenter:CGPointMake(_box.center.x, pointInWindow.y + view.frame.size.height/2)];
-            
         }
         
         /// Prio 2: Place the box above the element.
@@ -128,7 +127,6 @@
                                       MAX(0, pointInWindow.y - distanceBetweenViewAndBox - _box.frame.size.height),
                                       _box.frame.size.width,
                                       _box.frame.size.height)];
-
         }
         
         /// Prio 3: Place the box below the element.

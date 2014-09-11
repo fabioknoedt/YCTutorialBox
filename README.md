@@ -14,6 +14,22 @@ When the user closes (tapping) in the box, you have 2 options:
 
 The second option is useful for tutorials or presenting new features. For example, you want to show an explanation text for the user when she taps in a button, but you still want to perform the action of that button. In this case, you call the YCTutorialBox sending a block of code to execute when the user dismisses (closes) the dialog.
 
+Installation
+------------
+
+We recommend you to install this project using CocoaPods:
+
+### Installation with CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like AFNetworking in your projects. See the ["Getting Started" guide for more information](https://github.com/AFNetworking/AFNetworking/wiki/Getting-Started-with-AFNetworking).
+
+#### Podfile
+
+```ruby
+platform :ios, '6.0'
+pod "YCTutorialBox"
+```
+
 Usage
 ------------
 
