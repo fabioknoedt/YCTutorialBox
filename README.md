@@ -1,6 +1,9 @@
 YCTutorialBox
 =============
 
+![Example of a Tutorial/Explanation/Information Box for an iOS application](YCTutorialBoxSample/Resources/ExampleHalfScreen.png)
+[Full screen](YCTutorialBoxSample/Resources/ExampleFullScreen.png)
+
 A UIView subclass for Tutorial/Welcome/New Feature/Explanation flow. You can focus one element in the screen and show instructions about this element. Also, you can run blocks of code after the user closes the box/dialog.
 
 This UI library was designed to show a simple balloon/box with:
