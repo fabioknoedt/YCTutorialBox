@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -7,14 +7,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="YCTutorialBox">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-ZO-aT2" userLabel="Box">
-                    <rect key="frame" x="10" y="244" width="300" height="80"/>
+                    <rect key="frame" x="10" y="260" width="580" height="80"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE A PICTURE OF YOURSELF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-7i-8t2" userLabel="boxHeadline" customClass="FXLabel">
-                            <rect key="frame" x="20" y="14" width="260" height="18"/>
+                            <rect key="frame" x="20" y="14" width="540" height="18"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ttB-2A-Egl"/>
                             </constraints>
@@ -28,7 +28,7 @@
                             </userDefinedRuntimeAttributes>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T WORRY YOU CAN EDIT IT WITH FILTER LATER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-bV-rat" userLabel="boxHelpText" customClass="FXLabel">
-                            <rect key="frame" x="20" y="32" width="260" height="32"/>
+                            <rect key="frame" x="20" y="32" width="540" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="fZB-EC-sHu"/>
                             </constraints>
@@ -66,15 +66,14 @@
             </subviews>
             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="Rwz-ZO-aT2" secondAttribute="centerX" id="4nw-et-D3M"/>
-                <constraint firstItem="Rwz-ZO-aT2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="aPP-mR-iAQ"/>
-                <constraint firstAttribute="centerY" secondItem="Rwz-ZO-aT2" secondAttribute="centerY" id="glY-K0-4aO"/>
+                <constraint firstItem="Rwz-ZO-aT2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="XfS-5b-M0D"/>
+                <constraint firstItem="Rwz-ZO-aT2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qCL-5c-xxF"/>
+                <constraint firstItem="Rwz-ZO-aT2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ziD-kn-t7x"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                     <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

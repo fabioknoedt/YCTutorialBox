@@ -69,6 +69,7 @@ Support
 ------------	
 	
 Runs fine in iOS6+ and requires ARC.
+Designed for every iDevice (iPhone, iPad or iPod).
 
 	
 Contributors

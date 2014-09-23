@@ -9,7 +9,7 @@
 #import "YCTutorialBox.h"
 #import <FXLabel/FXLabel.h>
 
-#define distanceBetweenViewAndBox 40
+#define distanceBetweenViewAndBox 20
 
 @interface YCTutorialBox ()
 
@@ -211,6 +211,12 @@
         /// Positioning the view in the right place.
         [self positionView:_viewInFocus];
     }
+    
+    UIWindow *currentWindow = [UIApplication sharedApplication].keyWindow;
+    [self setFrame:currentWindow.frame];
+    
+    /// Adjust subviews.
+    [self layoutIfNeeded];
 }
 
 @end
