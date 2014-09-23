@@ -141,7 +141,7 @@
         /// Prio 4: Place the box in the center of the screen.
         else {
             
-            [_box setCenter:CGPointMake(_box.center.x, self.center.y)];
+            [_box setCenter:CGPointMake(_box.center.x, currentWindow.center.y)];
         }
     }
 }

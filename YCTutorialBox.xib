@@ -11,7 +11,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-ZO-aT2" userLabel="Box">
-                    <rect key="frame" x="10" y="254" width="300" height="60"/>
+                    <rect key="frame" x="10" y="244" width="300" height="80"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE A PICTURE OF YOURSELF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-7i-8t2" userLabel="boxHeadline" customClass="FXLabel">
                             <rect key="frame" x="20" y="14" width="260" height="18"/>
@@ -28,11 +28,11 @@
                             </userDefinedRuntimeAttributes>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T WORRY YOU CAN EDIT IT WITH FILTER LATER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-bV-rat" userLabel="boxHelpText" customClass="FXLabel">
-                            <rect key="frame" x="20" y="32" width="260" height="12"/>
+                            <rect key="frame" x="20" y="32" width="260" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="fZB-EC-sHu"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                             <userDefinedRuntimeAttributes>
@@ -89,7 +89,7 @@
                 <outlet property="boxHeadline" destination="r3z-7i-8t2" id="tF4-hG-eHa"/>
                 <outlet property="boxHelpText" destination="cT0-bV-rat" id="hBn-Qh-9G2"/>
             </connections>
-            <point key="canvasLocation" x="438" y="271"/>
+            <point key="canvasLocation" x="516" y="388"/>
         </view>
     </objects>
 </document>
