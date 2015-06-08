@@ -167,7 +167,7 @@
 {
     if (( fabsf( ( double ) [[UIDevice currentDevice].systemVersion floatValue] >= 7.0 ) )) {
         
-        UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0f);
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, 0.0f);
         [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
         UIImage * snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
