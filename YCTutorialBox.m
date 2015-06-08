@@ -165,7 +165,8 @@
  */
 - (UIImage *)imageWithView:(UIView *)view
 {
-    if (( fabsf( ( double ) [[UIDevice currentDevice].systemVersion floatValue] >= 7.0 ) )) {
+    /// If it is iOS 7 or greater.
+    if ([view respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
         
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, 0.0f);
         [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
