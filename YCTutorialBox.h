@@ -16,7 +16,7 @@
  *  @param headline The Headline of the box.
  *  @return the initialized object.
  */
-- (id)initWithHeadline:(NSString *)headline;
+- (instancetype)initWithHeadline:(NSString *)headline;
 
 /*!
  *  @brief  Initialize the view with a headline and a help text.
@@ -24,7 +24,8 @@
  *  @param helpText headline The help text or description of the box.
  *  @return the initialized object.
  */
-- (id)initWithHeadline:(NSString *)headline withHelpText:(NSString *)helpText;
+- (instancetype)initWithHeadline:(NSString *)headline
+                    withHelpText:(NSString *)helpText;
 
 /*!
  *  @brief  Initialize the view with a headline, help text and a completion block.
@@ -33,7 +34,9 @@
  *  @param completion A completion block to be executed after the view is dismissed.
  *  @return the initialized object.
  */
-- (id)initWithHeadline:(NSString *)headline withHelpText:(NSString *)helpText withCompletionBlock:(void (^)())completion;
+- (instancetype)initWithHeadline:(NSString *)headline
+                    withHelpText:(NSString *)helpText
+             withCompletionBlock:(void (^)())completion;
 
 /*!
  *  @brief  Show the box on the screen.

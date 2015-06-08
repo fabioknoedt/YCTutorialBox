@@ -29,7 +29,7 @@
  *  @param headline The Headline of the box.
  *  @return the initialized object.
  */
-- (id)initWithHeadline:(NSString *)headline;
+- (instancetype)initWithHeadline:(NSString *)headline;
 {
     return [self initWithHeadline:headline withHelpText:nil withCompletionBlock:nil];
 }
@@ -40,7 +40,8 @@
  *  @param helpText headline The help text or description of the box.
  *  @return the initialized object.
  */
-- (id)initWithHeadline:(NSString *)headline withHelpText:(NSString *)helpText;
+- (instancetype)initWithHeadline:(NSString *)headline
+                    withHelpText:(NSString *)helpText;
 {
     return [self initWithHeadline:headline withHelpText:helpText withCompletionBlock:nil];
 }
@@ -52,7 +53,9 @@
  *  @param completion A completion block to be executed after the view is dismissed.
  *  @return the initialized object.
  */
-- (id)initWithHeadline:(NSString *)headline withHelpText:(NSString *)helpText withCompletionBlock:(void (^)())completion;
+- (instancetype)initWithHeadline:(NSString *)headline
+                    withHelpText:(NSString *)helpText
+             withCompletionBlock:(void (^)())completion;
 {
     /// Init the view.
     self = [[[NSBundle mainBundle] loadNibNamed:@"YCTutorialBox" owner:self options:nil] lastObject];
@@ -97,7 +100,11 @@
 
 #pragma mark - Private methods
 
-- (void)positionBox:(UIView *)view
+/*!
+ *  @brief  Position the box with the text in the best place: top/over/bottom/center.
+ *  @param view The view that was snapshotted (in focus).
+ */
+- (void)positionBox:(UIView *)view;
 {
     /// If there is no view, display the box in the center of the screen.
     if (view) {
@@ -146,7 +153,11 @@
     }
 }
 
-- (void)positionView:(UIView *)view
+/*!
+ *  @brief  Position the view (copy/snapshot) in the same place it is in the current screen.
+ *  @param view The view that was snapshotted (in focus).
+ */
+- (void)positionView:(UIView *)view;
 {
     /// Position the view in focus.
     CGPoint pointInWindow = [self convertPoint:view.bounds.origin fromView:view];
@@ -163,7 +174,7 @@
  *  @param view The UIView to take the screenshot.
  *  @return the image created from the UIView screenshot.
  */
-- (UIImage *)imageWithView:(UIView *)view
+- (UIImage *)imageWithView:(UIView *)view;
 {
     /// If it is iOS 7 or greater.
     if ([view respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
@@ -186,8 +197,12 @@
 
 #pragma mark - UIView delegate
 
-/// Closes the UIView.
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+/*!
+ *  @brief  Tells the receiver when one or more fingers are raised from a view or window.
+ *  @param touches A set of UITouch instances that represent the touches for the ending phase of the event represented by event.
+ *  @param event   An object representing the event to which the touches belong.
+ */
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 {
     /// Removes itself from the superview.
     [self removeFromSuperview];
@@ -198,8 +213,10 @@
     }
 }
 
-/// Make the layout for subviews, if needed it.
-- (void)layoutSubviews
+/*!
+ *  @brief  Lays out subviews. Make the layout for subviews, if needed it.
+ */
+- (void)layoutSubviews;
 {
     [super layoutSubviews];
     
