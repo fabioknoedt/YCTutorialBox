@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,9 +11,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rwz-ZO-aT2" userLabel="Box">
-                    <rect key="frame" x="10" y="260" width="580" height="80"/>
+                    <rect key="frame" x="10" y="259" width="580" height="82"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE A PICTURE OF YOURSELF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-7i-8t2" userLabel="boxHeadline" customClass="FXLabel">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE A PICTURE OF YOURSELF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-7i-8t2" userLabel="boxHeadline">
                             <rect key="frame" x="20" y="14" width="540" height="18"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ttB-2A-Egl"/>
@@ -21,25 +21,15 @@
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
-                                    <real key="value" value="-0.29999999999999999"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T WORRY YOU CAN EDIT IT WITH FILTER LATER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-bV-rat" userLabel="boxHelpText" customClass="FXLabel">
-                            <rect key="frame" x="20" y="32" width="540" height="32"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DON'T WORRY YOU CAN EDIT IT WITH FILTER LATER" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-bV-rat" userLabel="boxHelpText">
+                            <rect key="frame" x="20" y="34" width="540" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="fZB-EC-sHu"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="lineSpacing">
-                                    <real key="value" value="-0.20000000000000001"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,7 +39,7 @@
                         <constraint firstItem="cT0-bV-rat" firstAttribute="leading" secondItem="Rwz-ZO-aT2" secondAttribute="leading" constant="20" id="5OT-uT-z51"/>
                         <constraint firstAttribute="bottom" secondItem="cT0-bV-rat" secondAttribute="bottom" constant="16" id="BKS-Ux-sqR"/>
                         <constraint firstAttribute="trailing" secondItem="r3z-7i-8t2" secondAttribute="trailing" constant="20" id="KrA-3E-4aM"/>
-                        <constraint firstItem="cT0-bV-rat" firstAttribute="top" secondItem="r3z-7i-8t2" secondAttribute="bottom" id="ihI-Gn-4Fq"/>
+                        <constraint firstItem="cT0-bV-rat" firstAttribute="top" secondItem="r3z-7i-8t2" secondAttribute="bottom" constant="2" id="ihI-Gn-4Fq"/>
                         <constraint firstItem="cT0-bV-rat" firstAttribute="leading" secondItem="r3z-7i-8t2" secondAttribute="leading" id="nw7-rX-0Rs"/>
                         <constraint firstItem="r3z-7i-8t2" firstAttribute="leading" secondItem="Rwz-ZO-aT2" secondAttribute="leading" constant="20" id="p5Z-1B-WwJ"/>
                         <constraint firstAttribute="trailing" secondItem="cT0-bV-rat" secondAttribute="trailing" constant="20" id="v63-d4-qa2"/>
@@ -83,11 +73,6 @@
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="boolean" keyPath="dynamic" value="NO"/>
             </userDefinedRuntimeAttributes>
-            <connections>
-                <outlet property="box" destination="Rwz-ZO-aT2" id="cg2-HY-qah"/>
-                <outlet property="boxHeadline" destination="r3z-7i-8t2" id="tF4-hG-eHa"/>
-                <outlet property="boxHelpText" destination="cT0-bV-rat" id="hBn-Qh-9G2"/>
-            </connections>
             <point key="canvasLocation" x="516" y="388"/>
         </view>
     </objects>

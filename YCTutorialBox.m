@@ -7,15 +7,14 @@
 //
 
 #import "YCTutorialBox.h"
-#import <FXLabel/FXLabel.h>
 
 #define distanceBetweenViewAndBox 20
 
 @interface YCTutorialBox ()
 
 @property (weak, nonatomic) IBOutlet UIView *box;
-@property (weak, nonatomic) IBOutlet FXLabel *boxHeadline;
-@property (weak, nonatomic) IBOutlet FXLabel *boxHelpText;
+@property (weak, nonatomic) IBOutlet UILabel *boxHeadline;
+@property (weak, nonatomic) IBOutlet UILabel *boxHelpText;
 
 @property (strong, nonatomic) UIView *viewInFocus;
 @property (nonatomic, copy) void (^completionBlock)();

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'YCTutorialBox'
-  spec.version          = '1.0.6'
+  spec.version          = '1.0.7'
   spec.license      	= { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage         = 'https://github.com/yuppiu/YCTutorialBox'
   spec.authors          = { 'Fabio Knoedt' => 'fabioknoedt@gmail.com' }
@@ -10,6 +10,5 @@ Pod::Spec.new do |spec|
   spec.resources 		= ["YCTutorialBox.xib"]
   spec.requires_arc     = true
   spec.dependency       'FXBlurView'
-  spec.dependency       'FXLabel'
   spec.ios.deployment_target = '6.0'
 end
