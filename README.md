@@ -79,4 +79,5 @@ Designed for every iDevice (iPhone, iPad or iPod).
 Contributors
 ------------
 
+<img align="right" style="float: right" src="https://travis-ci.com/img/made-in-berlin-badge.png" alt="Made in Berlin" />
 * [Fabio Knoedt](https://github.com/fabioknoedt)
