@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary          = 'A UIView subclass for Tutorial/Welcome/New Feature/Explanation flow. You can focus one element in the screen and show instructions about it.'
   spec.source           = { :git => 'https://github.com/yuppiu/YCTutorialBox.git', :tag => spec.version.to_s }
   spec.source_files     = 'YCTutorialBox.{h,m}'
-  spec.resources 		    = ["Resources/YCTutorialBox.xib"]
+  spec.resources 		    = ["YCTutorialBox.xib"]
   spec.requires_arc     = true
   spec.dependency       'FXBlurView'
   spec.ios.deployment_target = '6.0'

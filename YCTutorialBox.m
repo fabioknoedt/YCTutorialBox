@@ -78,8 +78,9 @@
              withCompletionBlock:(void (^)())completion;
 {
     /// Init the view.
-    self = [[[NSBundle mainBundle] loadNibNamed:@"YCTutorialBox" owner:self options:nil] lastObject];
+    self = [[[NSBundle bundleForClass:[self class]] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
     
+    /// If we loaded the bundle and the .xib file just fine.
     if (self) {
         
         /// Set the texts.
