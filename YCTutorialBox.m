@@ -12,19 +12,40 @@
 
 @interface YCTutorialBox ()
 
+/*!
+ *  The box UIView containing the headline and helpText.
+ */
 @property (weak, nonatomic) IBOutlet UIView *box;
+
+/*!
+ *  The headline Outlet property.
+ */
 @property (weak, nonatomic) IBOutlet UILabel *boxHeadline;
+
+/*!
+ *  The helpText Outlet property.
+ */
 @property (weak, nonatomic) IBOutlet UILabel *boxHelpText;
 
+/*!
+ *  The view that should be in focus when displaying the box.
+ */
 @property (strong, nonatomic) UIView *viewInFocus;
+
+/*!
+ *  The block of code that should be executed after the user dismisses the box.
+ */
 @property (nonatomic, copy) void (^completionBlock)();
 
 @end
 
+/*!
+ *  Implementation for YCTutorialBox.
+ */
 @implementation YCTutorialBox
 
 /*!
- *  @brief  Initialize the view with a headline.
+ *  Initialize the view with a headline.
  *  @param headline The Headline of the box.
  *  @return the initialized object.
  */
@@ -34,7 +55,7 @@
 }
 
 /*!
- *  @brief  Initialize the view with a headline and a help text.
+ *  Initialize the view with a headline and a help text.
  *  @param headline headline The Headline of the box.
  *  @param helpText headline The help text or description of the box.
  *  @return the initialized object.
@@ -46,7 +67,7 @@
 }
 
 /*!
- *  @brief  Initialize the view with a headline, help text and a completion block.
+ *  Initialize the view with a headline, help text and a completion block.
  *  @param headline headline The Headline of the box.
  *  @param helpText headline The help text or description of the box.
  *  @param completion A completion block to be executed after the view is dismissed.
@@ -73,7 +94,7 @@
 }
 
 /*!
- *  @brief  Show the box on the screen.
+ *  Show the box on the screen.
  */
 - (void)show;
 {
@@ -81,7 +102,7 @@
 }
 
 /*!
- *  @brief  Show the box on the screen with focus on the view selected.
+ *  Show the box on the screen with focus on the view selected.
  *  @param view The view to make focus on.
  */
 - (void)showAndFocusView:(UIView *)view;
@@ -100,7 +121,7 @@
 #pragma mark - Private methods
 
 /*!
- *  @brief  Position the box with the text in the best place: top/over/bottom/center.
+ *  Position the box with the text in the best place: top/over/bottom/center.
  *  @param view The view that was snapshotted (in focus).
  */
 - (void)positionBox:(UIView *)view;
@@ -153,7 +174,7 @@
 }
 
 /*!
- *  @brief  Position the view (copy/snapshot) in the same place it is in the current screen.
+ *  Position the view (copy/snapshot) in the same place it is in the current screen.
  *  @param view The view that was snapshotted (in focus).
  */
 - (void)positionView:(UIView *)view;
@@ -169,7 +190,7 @@
 }
 
 /*!
- *  @brief  Creates a UIImage from a UIView.
+ *  Creates a UIImage from a UIView.
  *  @param view The UIView to take the screenshot.
  *  @return the image created from the UIView screenshot.
  */
@@ -197,7 +218,7 @@
 #pragma mark - UIView delegate
 
 /*!
- *  @brief  Tells the receiver when one or more fingers are raised from a view or window.
+ *  Tells the receiver when one or more fingers are raised from a view or window.
  *  @param touches A set of UITouch instances that represent the touches for the ending phase of the event represented by event.
  *  @param event   An object representing the event to which the touches belong.
  */
@@ -213,7 +234,7 @@
 }
 
 /*!
- *  @brief  Lays out subviews. Make the layout for subviews, if needed it.
+ *  Lays out subviews. Make the layout for subviews, if needed it.
  */
 - (void)layoutSubviews;
 {

@@ -9,17 +9,21 @@
 #import <UIKit/UIKit.h>
 #import <FXBlurView/FXBlurView.h>
 
+/*!
+ *  A simple UIView/FXBlurView class to display Alerts with text
+ *  and also focus in a specific view, making the rest blurred.
+ */
 @interface YCTutorialBox : FXBlurView
 
 /*!
- *  @brief  Initialize the view with a headline.
+ *  Initialize the view with a headline.
  *  @param headline The Headline of the box.
  *  @return the initialized object.
  */
 - (instancetype)initWithHeadline:(NSString *)headline;
 
 /*!
- *  @brief  Initialize the view with a headline and a help text.
+ *  Initialize the view with a headline and a help text.
  *  @param headline headline The Headline of the box.
  *  @param helpText headline The help text or description of the box.
  *  @return the initialized object.
@@ -28,7 +32,7 @@
                     withHelpText:(NSString *)helpText;
 
 /*!
- *  @brief  Initialize the view with a headline, help text and a completion block.
+ *  Initialize the view with a headline, help text and a completion block.
  *  @param headline headline The Headline of the box.
  *  @param helpText headline The help text or description of the box.
  *  @param completion A completion block to be executed after the view is dismissed.
@@ -39,12 +43,12 @@
              withCompletionBlock:(void (^)())completion;
 
 /*!
- *  @brief  Show the box on the screen.
+ *  Show the box on the screen.
  */
 - (void)show;
 
 /*!
- *  @brief  Show the box on the screen with focus on the view selected.
+ *  Show the box on the screen with focus on the view selected.
  *  @param view The view to make focus on.
  */
 - (void)showAndFocusView:(UIView *)view;
