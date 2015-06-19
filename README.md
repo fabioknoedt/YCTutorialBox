@@ -1,5 +1,9 @@
 YCTutorialBox
 =============
+[![Pod Version](http://img.shields.io/cocoapods/v/YCTutorialBox.svg?style=flat)](http://cocoadocs.org/docsets/YCTutorialBox/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/YCTutorialBox.svg?style=flat)](http://cocoadocs.org/docsets/YCTutorialBox/)
+[![Pod License](http://img.shields.io/cocoapods/l/YCTutorialBox.svg?style=flat)](https://github.com/yuppiu/YCTutorialBox/blob/master/LICENSE)
+[![Dependency Status](https://www.versioneye.com/objective-c/YCTutorialBox/1.0.8/badge.svg?style=flat)](https://www.versioneye.com/objective-c/YCTutorialBox)
 
 ![alt text](YCTutorialBoxSample/Resources/ExampleHalfScreen.png "Example of a Tutorial/Explanation/Information Box for an iOS application")
 
@@ -75,4 +79,5 @@ Designed for every iDevice (iPhone, iPad or iPod).
 Contributors
 ------------
 
+<img align="right" style="float: right" src="https://travis-ci.com/img/made-in-berlin-badge.png" alt="Made in Berlin" />
 * [Fabio Knoedt](https://github.com/fabioknoedt)
